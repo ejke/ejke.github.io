@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Exo-DemiBold';
+  src: url('Exo-DemiBold.eot');
+  src: url('Exo-DemiBold.woff2') format('woff2'),
+       url('Exo-DemiBold.woff') format('woff'),
+       url('Exo-DemiBold.ttf') format('truetype'),
+       url('Exo-DemiBold.svg#Exo-DemiBold') format('svg'),
+       url('Exo-DemiBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
