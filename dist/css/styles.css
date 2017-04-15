@@ -1,0 +1,294 @@
+html, body {
+  height: 100%; }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, #D2D2D2, #73877b); }
+
+* {
+  box-sizing: border-box !important; }
+
+.clock {
+  width: 360px;
+  height: 360px;
+  padding: 25px;
+  background-color: #e0e2db;
+  border-radius: 50%;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15); }
+
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #F8ECB8;
+  border: 5px solid #e9b44c;
+  border-radius: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.75) inset; }
+  .inner .border1 {
+    position: absolute;
+    top: .45rem;
+    left: .58rem;
+    width: 94%;
+    height: 94%;
+    border: 1px solid #8e8e8e;
+    border-radius: 100%; }
+  .inner .border2 {
+    position: absolute;
+    top: .8rem;
+    left: .98rem;
+    width: 90%;
+    height: 90%;
+    border: 1px solid #8e8e8e;
+    border-radius: 100%; }
+  .inner .hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 7.2px;
+    background-color: #3C342A; }
+    .inner .hand.hour {
+      margin-top: -32.72727px;
+      transform: rotate(0deg) translate(-50%, -50%);
+      transform-origin: 0 32.72727px;
+      width: 9px;
+      border: .2rem solid transparent;
+      border-bottom: 120px solid #3C342A;
+      background-color: transparent; }
+      .inner .hand.hour:before {
+        content: '';
+        position: absolute;
+        top: 1.1rem;
+        left: -.535rem;
+        background: #3C342A;
+        height: 1.3rem;
+        width: 1.3rem;
+        border-radius: 0 50% 50% 50%;
+        transform: rotate(50deg) skew(10deg); }
+    .inner .hand.minute {
+      margin-top: -51.42857px;
+      transform: rotate(0deg) translate(-50%, -50%);
+      transform-origin: 0 51.42857px;
+      width: 7.2px;
+      border: .2rem solid transparent;
+      margin-bottom: -2rem;
+      border-bottom: 163.63636px solid #3C342A;
+      background-color: transparent; }
+      .inner .hand.minute:before, .inner .hand.minute:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 0rem;
+        top: 4.5rem;
+        border: .3rem solid transparent;
+        border-top: 2rem solid #3C342A;
+        transform: translate(-50%, -50%); }
+      .inner .hand.minute:after {
+        top: 2.4rem;
+        border: .3rem solid transparent;
+        border-bottom: 2rem solid #3C342A; }
+    .inner .hand.second {
+      width: 1.94595px;
+      height: 120px;
+      background-color: #3C342A;
+      margin-top: -36px;
+      box-shadow: -4px -6px 0 0 rgba(0, 0, 0, 0.15);
+      transform: rotate(0deg) translate(-50%, -50%);
+      transform-origin: 0 36px; }
+      .inner .hand.second:before, .inner .hand.second:after {
+        content: '';
+        display: inherit;
+        position: inherit;
+        left: inherit;
+        background-color: inherit;
+        border-radius: 100%;
+        transform: translate(-50%, -50%); }
+      .inner .hand.second:before {
+        top: 94.73684px;
+        width: 18px;
+        height: 18px;
+        box-shadow: -2px -2px 2px 0 rgba(0, 0, 0, 0.15); }
+      .inner .hand.second:after {
+        top: 120px;
+        width: 7.2px;
+        height: 14.4px;
+        box-shadow: -4px -6px 2px 0 rgba(0, 0, 0, 0.15); }
+  .inner .graduations .graduation {
+    display: block;
+    position: absolute;
+    top: 7.5px;
+    left: 50%;
+    width: 1.94595px;
+    height: 6px;
+    background-color: #362B26;
+    transform: rotate(0deg) translateX(-50%);
+    transform-origin: 0 140px; }
+    .inner .graduations .graduation:nth-child(5n-4) {
+      width: 4px;
+      height: 9px; }
+    .inner .graduations .graduation:nth-child(1) {
+      transform: rotate(1deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(2) {
+      transform: rotate(7deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(3) {
+      transform: rotate(13deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(4) {
+      transform: rotate(19deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(5) {
+      transform: rotate(25deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(6) {
+      transform: rotate(31deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(7) {
+      transform: rotate(37deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(8) {
+      transform: rotate(43deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(9) {
+      transform: rotate(49deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(10) {
+      transform: rotate(55deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(11) {
+      transform: rotate(61deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(12) {
+      transform: rotate(67deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(13) {
+      transform: rotate(73deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(14) {
+      transform: rotate(79deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(15) {
+      transform: rotate(85deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(16) {
+      transform: rotate(91deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(17) {
+      transform: rotate(97deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(18) {
+      transform: rotate(103deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(19) {
+      transform: rotate(109deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(20) {
+      transform: rotate(115deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(21) {
+      transform: rotate(121deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(22) {
+      transform: rotate(127deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(23) {
+      transform: rotate(133deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(24) {
+      transform: rotate(139deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(25) {
+      transform: rotate(145deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(26) {
+      transform: rotate(151deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(27) {
+      transform: rotate(157deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(28) {
+      transform: rotate(163deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(29) {
+      transform: rotate(169deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(30) {
+      transform: rotate(175deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(31) {
+      transform: rotate(181deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(32) {
+      transform: rotate(187deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(33) {
+      transform: rotate(193deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(34) {
+      transform: rotate(199deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(35) {
+      transform: rotate(205deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(36) {
+      transform: rotate(211deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(37) {
+      transform: rotate(217deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(38) {
+      transform: rotate(223deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(39) {
+      transform: rotate(229deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(40) {
+      transform: rotate(235deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(41) {
+      transform: rotate(241deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(42) {
+      transform: rotate(247deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(43) {
+      transform: rotate(253deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(44) {
+      transform: rotate(259deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(45) {
+      transform: rotate(265deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(46) {
+      transform: rotate(271deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(47) {
+      transform: rotate(277deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(48) {
+      transform: rotate(283deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(49) {
+      transform: rotate(289deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(50) {
+      transform: rotate(295deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(51) {
+      transform: rotate(301deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(52) {
+      transform: rotate(307deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(53) {
+      transform: rotate(313deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(54) {
+      transform: rotate(319deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(55) {
+      transform: rotate(325deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(56) {
+      transform: rotate(331deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(57) {
+      transform: rotate(337deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(58) {
+      transform: rotate(343deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(59) {
+      transform: rotate(349deg) translateX(-50%); }
+    .inner .graduations .graduation:nth-child(60) {
+      transform: rotate(355deg) translateX(-50%); }
+
+.numbers {
+  font-family: 'Old Standard TT', serif;
+  font-size: 2rem;
+  color: #362B26; }
+  .numbers .one, .numbers .two, .numbers .three, .numbers .four, .numbers .five, .numbers .six, .numbers .seven, .numbers .eight, .numbers .nine, .numbers .ten, .numbers .eleven, .numbers .twelwe {
+    position: absolute;
+    letter-spacing: -5px; }
+  .numbers .one {
+    top: 2rem;
+    left: 12.5rem; }
+  .numbers .two {
+    top: 4.7rem;
+    left: 14.3rem; }
+  .numbers .three {
+    top: 8.36rem;
+    left: 15.5rem; }
+  .numbers .four {
+    top: 11.5rem;
+    left: 14.5rem; }
+  .numbers .five {
+    top: 14rem;
+    left: 12rem; }
+  .numbers .six {
+    top: 15rem;
+    left: 8.2rem; }
+  .numbers .seven {
+    top: 14rem;
+    left: 4.5rem; }
+  .numbers .eight {
+    top: 11.6rem;
+    left: 2.2rem; }
+  .numbers .nine {
+    top: 8rem;
+    left: 1.5rem; }
+  .numbers .ten {
+    top: 4.5rem;
+    left: 2.6rem; }
+  .numbers .eleven {
+    top: 2.3rem;
+    left: 4.9rem; }
+  .numbers .twelwe {
+    top: 1.5rem;
+    left: 8.2rem; }

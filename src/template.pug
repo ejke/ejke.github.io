@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+  head
+    title= 'tere'
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Old+Standard+TT')
+    link(rel='stylesheet', href='css/styles.css')
+    script(type='text/javascript', src='js/main.js')
+  body
+    .clock
+      .inner
+        .border1
+        .border2
+        .hour.hand
+        .minute.hand
+        .second.hand
+        .graduations
+          - for (var graduations = 1; graduations <= 60; graduations++)
+            .graduation
+        .numbers
+          .one I
+          .two II
+          .three III
+          .four IV
+          .five V
+          .six VI
+          .seven VII
+          .eight VIII
+          .nine IX
+          .ten X
+          .eleven XI
+          .twelwe XII
