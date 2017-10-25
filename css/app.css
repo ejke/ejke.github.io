@@ -8,7 +8,8 @@ body {
   flex-flow: column;
   height: 100%;
   background-color: #fffcf7;
-  background-image: url("../img/k2bi_eike.jpg");
+  background-image: url("../img/DSC_0222.jpg");
+  background-position: center;
   background-size: cover;
 }
 .wrap {
