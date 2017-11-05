@@ -1,0 +1,51 @@
+
+/*******************************/
+/********** PROJECTS ***********/
+/*******************************/
+.projects {
+    font-family: 'Open Sans', cursive;
+}
+.projects h2 {
+  font-family: 'Exo', sans-serif;;
+}
+.projects h4 {
+font-family: 'Encode Sans Semi Condensed', sans-serif;
+}
+.p_intro {
+  background: #E1DBCA;
+}
+a[href^="http"]:empty::before {
+  content: attr(href);
+}
+.store_icon {
+  height: 3rem;
+}
+.clear{
+  float: left;
+  clear: both;
+}
+.no-clear {
+  float: left;
+}
+.columns {
+  padding-bottom: 1rem;
+}
+.mask_bg {
+
+}
+.mask {
+width: 138px;
+height: 50px;
+background: transparent;
+/*?*/overflow: hidden;
+/*?*/display: inline-block;
+-webkit-clip-path: polygon(54% 16%, 83% 15%, 94% 19%, 95% 44%, 87% 67%, 61% 78%, 31% 83%, 23% 73%, 23% 45%, 28% 26%);
+clip-path: polygon(54% 16%, 83% 15%, 94% 19%, 95% 44%, 87% 67%, 61% 78%, 31% 83%, 23% 73%, 23% 45%, 28% 26%);
+display:inline-block;
+background-color: yellow;
+width: 102px;
+left: 40px;
+top: 17px;
+height: 35px;
+
+}
