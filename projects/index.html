@@ -4,19 +4,43 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#db5945">
     <title>Eike's projects</title>
-    <link rel="icon" href="img/favicon2.ico">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Megrim|Roboto|Exo|Open+Sans|Encode+Sans+Semi+Condensed" rel="stylesheet">
-    <link rel="stylesheet" href="../css/foundation.css">
+    <link rel="icon" href="../img/favicon2.ico">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Megrim" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../css/foundation.css"> -->
     <link rel="stylesheet" href="../css/app.css">
   </head>
   <body class="projects">
-
+    <!-- header SECTION -->
+      <header>
+        <ul>
+          <li><a href="../home.html">
+            <div class="logo" role="button" aria-label="Homepage">
+              <div class="circle">
+              <!-- <h2>Eike did this</h2> -->
+                </div>
+            </div>
+          </a></li>
+          <li><a href="#">
+            <div id="js_menu" class="menu" role="button" aria-label="Menu">
+              <!-- <div class="hover_menu"></div> -->
+              <div class="line_1"></div>
+              <div class="line_2"></div>
+              <div class="line_3"></div>
+            </div>
+          </a></li>
+        </ul>
+        <!-- <ul>
+          <li><a href="/"><img src="../img/logo.svg" alt="Eike homepage" /></a></li>
+          <li><a href="#"><img src="../img/burx.svg" alt="menu" class="menu" /></a></li>
+        </ul> -->
+      </header>
 <!-- intro SECTION -->
     <section class="p_intro">
-      <div class="wrap">
+      <div class="intro_wrap">
 
-        <h1 class="text-center">Projects</h1>
+        <h1>Projects</h1>
         <p>Worked as front end developer in small web agency in Tallinn. Tasks included coding HTML sites and styling them with CSS3 based on mock-ups delivered from designer and adding interaction with CSS3 and Javascript. Completed works included websites, web apps and hybrid apps.</p>
 
       </div> <!-- wrap -->
@@ -24,17 +48,21 @@
 
 <!-- PROJECTS SECTION -->
     <section class="p_1">
-      <div class="wrap">
+      <div class="mini_wrap">
 
-        <div class="row">
-          <div class="columns large-6">
+        <div class="container">
+          <div class="sides">
             <h4 class="text-center">Wordpress site</h4>
             <h2 class="text-center">Eesti Teed (Estonian roads)</h2>
             <p>Developed new Wordpress site for Estonian Roads company from zero. Since the design was made by our designer, for me this meant making a custom Wordpress theme. Extra features included intergrating custom Google Maps and slider, also accessibility feature for users with limited vision. As the site aucience is mostly estonian, the client didn’t think it relevant to have full english site. </p>
-            <a href="http://www.eestiteed.eu/"></a>
+            <a target="_blank" href="http://www.eestiteed.eu/"></a>
           </div>
-          <div class="columns large-6">
-            <img src="../img/mac.svg" alt="Image of empty Mac OS browser" class="float-center">
+          <div class="sides">
+            <div class="device device_desktop">
+              <img src="../img/mac.svg" alt="Image of empty Mac OS browser" class="float-center device_img">
+              <video playsinline="" src="https://fpdl.vimeocdn.com/vimeo-prod-skyfire-std-us/01/3770/9/243854881/877544105.mp4?token=1511299691-0xb9ae96afd7f9be8a6cfcc9f6eb0818921ffb7260" muted="" autoplay="" loop="" poster="../img/eestiteed.png"></video>
+              <!-- <iframe src="https://player.vimeo.com/video/243854881?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+            </div>
           </div>
         </div>
 
@@ -43,20 +71,23 @@
 
 <!-- second project -->
     <section class="p_2">
-      <div class="wrap">
+      <div class="mini_wrap">
 
-        <div class="row">
-          <div class="columns large-6 large-push-6">
+        <div class="container row_reverse">
+          <div class="sides">
             <h4 class="text-center">HTML5 Game</h4>
             <h2 class="text-center">European Parlament Quiz</h2>
             <p>The European Parlament quiz was originally made in 2011 using Flash. The illustrations are made by well-know estonian illustrator and whole quiz was raising awareness of european facts when Estonia got into eurozone.
 What I did was that I put the whole quiz togerther again, using HTML5 this time - all animations and special effects are made using CSS3. Illustations were existing, and animations style and duration were decided before.
 </p>
-            <a href="https://viktoriin.europarl.ee/intro"></a>
+            <a target="_blank" href="https://viktoriin.europarl.ee/intro"></a>
           </div>
-          <div class="columns large-6 large-pull-6">
-            <img src="../img/mac.svg" alt="Image of empty Mac OS browser" class="float-center mask_bg">
-            <div class="mask" clip-path="" style="clip-path: url('#back-btn-03__clip-path');"></div>
+          <div class="sides">
+            <div class="device device_desktop">
+              <img src="../img/mac.svg" alt="Image of empty Mac OS browser" class="float-center device_img">
+                <video playsinline="" src="https://fpdl.vimeocdn.com/vimeo-prod-skyfire-std-us/01/3774/9/243870911/877631999.mp4?token=1511298609-0xe2a6ef2b98e7beaa608821b03a7d7c9a30ced2f0" muted="" autoplay="" loop="" poster="../img/europarl.png"></video>
+                <!-- <iframe src="https://player.vimeo.com/video/243870911?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+            </div>
           </div>
         </div>
 
@@ -65,10 +96,10 @@ What I did was that I put the whole quiz togerther again, using HTML5 this time 
 
 <!-- third project -->
     <section class="p_3">
-      <div class="wrap">
+      <div class="mini_wrap">
 
-        <div class="row">
-          <div class="columns large-6">
+        <div class="container">
+          <div class="sides">
             <h4 class="text-center">iOS/Android app</h4>
             <h2 class="text-center">Concepthome app</h2>
             <p>Concepthome was our client who wanted their customers to be able to browse and save house plans
@@ -79,12 +110,16 @@ What I did was that I put the whole quiz togerther again, using HTML5 this time 
                 <a href="https://frontendwebblog.wordpress.com/2017/01/11/first-blog-post/">here</a>.
 
             </p>
-            <a class="clear" href="https://www.concepthome.com"></a>
-            <a class="clear" href="https://play.google.com/store/apps/details?id=com.phonegap.concepthome&hl=en_GB"><img class="store_icon" src="../img/google_play.png" alt="Get the app on Google play" /></a>
-            <a class="no-clear" href="https://itunes.apple.com/au/app/house-and-home-plans/id1198158356?mt=8"><img class="store_icon" src="../img/app_store.png" alt="Available on App Store" /></a>
+            <a class="clear" target="_blank" href="https://www.concepthome.com"></a>
+            <a class="clear" target="_blank" href="https://play.google.com/store/apps/details?id=com.phonegap.concepthome&hl=en_GB"><img class="store_icon" src="../img/google_play.png" alt="Get the app on Google play" /></a>
+            <a class="no-clear" target="_blank" href="https://itunes.apple.com/au/app/house-and-home-plans/id1198158356?mt=8"><img class="store_icon" src="../img/app_store.png" alt="Available on App Store" /></a>
           </div>
-          <div class="columns large-6">
-            <img src="../img/mac.svg" alt="Image of empty Mac OS browser" class="float-center">
+          <div class="sides">
+            <div class="device device_iphone">
+              <img src="../img/concepthome.svg" alt="Image of empty Mac OS browser" class="float-center device_img">
+              <!-- <video playsinline="" poster="../img/concepthome.png" muted="" autoplay="" loop=""></video> -->
+
+            </div>
           </div>
         </div>
 
@@ -92,44 +127,40 @@ What I did was that I put the whole quiz togerther again, using HTML5 this time 
     </section> <!-- features -->
 
 <!-- SUBSCRIBE SECTION -->
-    <section class="p_3">
-      <div class="wrap">
-        <div class="row column">
+    <section class="p_4">
+      <div class="mini_wrap">
+        <div class="container column">
           <p class="text-center">On another app project I used Ionic2 for hybrid app, which was so much easier to implement and more powerful than Framework7. That second project has not been released yet, therefore I cannot hand out any link for futher inspectation.</p>
         </div>
       </div> <!-- wrap -->
     </section> <!-- subscribe -->
 
-<!-- FOOTER SECTION-->
-    <footer>
-      <div class="wrap row">
-        <!-- small: 12parts wide=whole row; medium: 2 parts to the right, div 2 parts wide -->
-        <div class="small-12 medium-offset-2 medium-2 column">
-          <h5>Contact</h5>
-          <a href="#">Phone: 33 444 5566</a>
-          <a href="#">explore@something.com</a>
-        </div>
-          <!-- small: 6 parts wide, half; medium: 2 parts to the right, div 2 parts wide -->
-        <div class="small-6 medium-offset-2 medium-2 column">
-          <h5>Support</h5>
-          <a href="#">Help center</a>
-          <a href="#">Get started</a>
-          <a href="#">Contact Us</a>
-        </div>
-        <!-- small: 6 parts wide, half; medium: div 2 parts wide and nothing more on the right(end) -->
-        <div class="small-6 medium-2 end column">
-          <h5>About Us</h5>
-          <a href="#">About Us</a>
-          <a href="#">Terms of use</a>
-          <a href="#">Privacy Policy</a>
-        </div>
-      </div> <!-- wrap row -->
-    </footer>
+    <!-- Footer -->
+        <section class="p_4">
+          <div class="mini_wrap">
+            <p class="text-center sub">Eike J. Raielo 2017</p>
+          </div> <!-- wrap -->
+        </section>
+
+
+    <!-- about section -->
+    <section id="js_about" class="full_screen display_no">
+      <div class="full_center navigation">
+        <ul>
+          <li><a href="../projects/">Projects</a></li>
+          <li><a href="../experiments/">Experiments</a></li>
+          <!-- <li><a href="../blog/">Blog</a></li> -->
+          <li><a href="../about/">About</a></li>
+        </ul>
+      </div>
+    </section>
 
 <!-- Scripts-->
-    <script src="js/vendor/jquery.js"></script>
+    <!-- <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
-</html>
+    <script src="js/app.js"></script> -->
+    <script src="../js/app.js"></script>
+    <script src="../js/tab_alert.js"></script>
+    </body>
+  </html>
