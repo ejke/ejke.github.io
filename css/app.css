@@ -39,24 +39,15 @@ a[href^="http"]:empty::before {
   text-align: center; }
 
 .wrap, .mini_wrap, .intro_wrap {
-  /*  border: 3px solid #000;*/
   margin: 1rem;
   padding: 4rem 1rem 1rem 1rem;
   flex: auto; }
 
-.mini_wrap {
-  padding: 1rem; }
+.wrap {
+  padding: 4rem 0 1rem 0; }
 
-@media screen and (min-width: 42em) {
-  .wrap {
-    margin: 0;
-    padding: 6rem; }
-  .mini_wrap {
-    margin: 0;
-    padding: 2rem 6rem; }
-  .intro_wrap {
-    margin: 0;
-    padding: 6rem 6rem 2rem 6rem; } }
+.mini_wrap {
+  padding: 0rem; }
 
 a {
   text-decoration: none;
@@ -75,10 +66,6 @@ a {
   /*align-items: flex-start;*/
   /*align-content: flex-start;*/
   justify-content: flex-start; }
-
-@media screen and (min-width: 42em) {
-  .row_reverse {
-    flex-flow: row-reverse wrap; } }
 
 /***** item *****/
 .item {
@@ -226,7 +213,8 @@ header {
     margin: 1rem;
     text-transform: uppercase; }
     .navigation ul li a {
-      color: #000; }
+      color: #000;
+      font-size: 2.2rem; }
       .navigation ul li a:hover {
         text-decoration: line-through;
         font-weight: 600; }
@@ -263,7 +251,7 @@ header {
 
 .sides {
   padding-bottom: 1rem;
-  flex-basis: 46%;
+  flex-basis: 100%;
   margin: 2%; }
   .sides .device {
     position: relative;
@@ -292,13 +280,16 @@ header {
 /************ ABOUT ***********/
 /*******************************/
 .me {
-  display: flex;
-  flex-flow: column;
-  height: 100%;
   background: linear-gradient(to right, #fffcf7, #3e3b3b);
   background-image: url("../img/DSC_0222.jpg");
   background-position: center;
+  background-attachment: fixed;
   background-size: cover; }
+
+.wrap_about {
+  max-width: 31rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem; }
 
 .name {
   font-family: 'Megrim', cursive;
@@ -313,3 +304,36 @@ header {
 .social {
   width: 3rem;
   margin-right: 2rem; }
+
+/*******************************/
+/************ no js ***********/
+/*******************************/
+@media screen and (min-width: 769px) {
+  .wrap, .mini_wrap, .intro_wrap {
+    /*  border: 3px solid #000;*/
+    margin: 1rem;
+    padding: 4rem 1rem 1rem 1rem;
+    flex: auto; }
+  .mini_wrap {
+    padding: 1rem; }
+  .sides {
+    flex-basis: 46%; }
+  .me {
+    height: 100%; } }
+
+@media screen and (min-width: 1025px) {
+  .navigation ul li a {
+    font-size: 3.2rem; }
+  .wrap {
+    margin: 0;
+    padding: 6rem; }
+  .mini_wrap {
+    margin: 0;
+    padding: 2rem 6rem; }
+  .intro_wrap {
+    margin: 0;
+    padding: 6rem 6rem 2rem 6rem; } }
+
+@media screen and (min-width: 42em) {
+  .row_reverse {
+    flex-flow: row-reverse wrap; } }
