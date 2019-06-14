@@ -22,3 +22,4 @@ document.addEventListener("DOMContentLoaded", function(event){
 // listen for clicks
   menu.addEventListener("click", menuClick);
 });
+
