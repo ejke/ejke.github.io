@@ -1,281 +1,38 @@
-/* **********************************************************
-FONTS
-********************************************************** */
-/*hero h1*/
-@font-face {
-  font-family: "Exo-Thin";
-  src: url('../fonts/exo/exo-thin/Exo-Thin.eot');
-  src: url('../fonts/exo/Exo-Thin.otf');
-  src: url('../fonts/exo/exo-thin/Exo-Thin.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/exo/exo-thin/Exo-Thin.woff') format('woff'),
-       url('../fonts/exo/exo-thin/Exo-Thin.woff2') format('woff2'),
-       url('../fonts/exo/exo-thin/Exo-Thin.ttf') format('truetype'),
-       url('../fonts/exo/exo-thin/Exo-Thin.svg#Exo-Thin') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  }
-
-/*features h2*/
-@font-face {
-  font-family: "Exo-Regular";
-  src: url('../fonts/exo/exo-regular/Exo-Regular.eot');
-  src: url('../fonts/exo/Exo-Regular.otf');
-  src: url('../fonts/exo/exo-regular/Exo-Regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/exo/exo-regular/Exo-Regular.woff') format('woff'),
-       url('../fonts/exo/exo-regular/Exo-Regular.woff2') format('woff2'),
-       url('../fonts/exo/exo-regular/Exo-Regular.ttf') format('truetype'),
-       url('../fonts/exo/exo-regular/Exo-Regular.svg#Exo-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  }
-
-/*subscribe h2, subscribe button, footer h5*/
-@font-face {
-  font-family: "Exo-Medium";
-  src: url('../fonts/exo/exo-medium/Exo-Medium.eot');
-  src: url('../fonts/exo/Exo-Medium.otf');
-  src: url('../fonts/exo/exo-medium/Exo-Medium.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/exo/exo-medium/Exo-Medium.woff') format('woff'),
-       url('../fonts/exo/exo-medium/Exo-Medium.woff2') format('woff2'),
-       url('../fonts/exo/exo-medium/Exo-Medium.ttf') format('truetype'),
-       url('../fonts/exo/exo-medium/Exo-Medium.svg#Exo-Medium') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  }
-
-/*footer a*/
-@font-face {
-  font-family: "Exo-Demibold";
-  src: url('../fonts/exo/exo-demibold/Exo-DemiBold.eot');
-  src: url('../fonts/exo/Exo-Demibold.otf');
-  src: url('../fonts/exo/exo-demibold/Exo-DemiBold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/exo/exo-demibold/Exo-DemiBold.woff') format('woff'),
-       url('../fonts/exo/exo-demibold/Exo-DemiBold.woff2') format('woff2'),
-       url('../fonts/exo/exo-demibold/Exo-DemiBold.ttf') format('truetype'),
-       url('../fonts/exo/exo-demibold/Exo-DemiBold.svg#Exo-DemiBold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  }
-
-  /*features h4*/
-  @font-face {
-    font-family: 'EncodeSansCompressed-SemiBold';
-    src: url('../fonts/encode-sans-compressed-semibold/EncodeSansCompressed-SemiBold.eot');
-    src: url('../fonts/encode-sans-compressed-semibold/EncodeSansCompressed-SemiBold.otf');
-    src: url('../fonts/encode-sans-compressed-semibold/EncodeSansCompressed-SemiBold.woff2') format('woff2'),
-         url('../fonts/encode-sans-compressed-semibold/EncodeSansCompressed-SemiBold.woff') format('woff'),
-         url('../fonts/encode-sans-compressed-semibold/EncodeSansCompressed-SemiBold.ttf') format('truetype'),
-         url('../fonts/encode-sans-compressed-semibold/EncodeSansCompressed-SemiBold.svg#EncodeSansCompressed-SemiBold') format('svg'),
-         url('../fonts/encode-sans-compressed-semibold/EncodeSansCompressed-SemiBold.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  /*subscribe p*/
-  @font-face {
-    font-family: 'Sansbold';
-    src: url('../fonts/sans_bold/Eau-SansBold.eot');
-    src: url('../fonts/sans_bold/Eau-SansBold.otf');
-    src: url('../fonts/sans_bold/Eau-SansBold.woff2') format('woff2'),
-         url('../fonts/sans_bold/Eau-SansBold.woff') format('woff'),
-         url('../fonts/sans_bold/Eau-SansBold.ttf') format('truetype'),
-         url('../fonts/sans_bold/Eau-SansBold.svg#Eau-SansBold') format('svg'),
-         url('../fonts/sans_bold/Eau-SansBold.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  /*features p*/
-  @font-face {
-    font-family: 'Sansbook';
-    src: url('../fonts/sans_book/Eau-SansBook.eot');
-    src: url('../fonts/sans_book/Eau-SansBook.otf');
-    src: url('../fonts/sans_book/Eau-SansBook.woff2') format('woff2'),
-         url('../fonts/sans_book/Eau-SansBook.woff') format('woff'),
-         url('../fonts/sans_book/Eau-SansBook.ttf') format('truetype'),
-         url('../fonts/sans_book/Eau-SansBook.svg#Eau-SansBook') format('svg'),
-         url('../fonts/sans_book/Eau-SansBook.eot?#iefix') format('embedded-opentype');
-    font-weight: bold;
-    font-style: normal;
-  }
-
-/* **********************************************************
-GENERAL
-********************************************************** */
-/*that extra space on sides that make all conten apprear in even box*/
-.wrap {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/* **********************************************************
-HERO SECTION
-********************************************************** */
-/*hero background picture, padding*/
-.hero{
-  background: #9dd76a url("../img/hero_landscape_original.jpg") no-repeat center top; /*center top to get more sky visible, text is more readable*/
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vh;
-  padding: 12em 0; /*18em for desktop is good, 12 seems mobile ok*/
-  /*position: relative;*/
-}
-/*heading styles*/
-.hero h1{
-  color: #282828;
-  font-family: "Exo-Thin";
-  margin: 0 0 1em 0;
-}
-/*img positioning and size*/
-.hero img {
-  display: block;
-  margin: auto;
-  height: 3em; /*3em seems more likely to be exact from screenshot and looks better on mobile*/
-}
-/*medium and larger: bigger padding*/
-@media screen and (min-width: 40em) {
-  .hero {
-      padding: 18em 0;
-  }
-}
-/*custom: special case with certain phones and tablets*/
-@media screen and (max-width: 50em) and (orientation: landscape) {
-  .hero {
-      padding: 6em 0;
-  }
-  .hero h1 {
-    margin: 0;
-  }
-}
-/* **********************************************************
-FEATURES SECTION
-********************************************************** */
-/*features styles*/
-.features {
-  background-color: #f6f5f3;
-  padding: 5em 0 0 0;
-}
-/*subheading style*/
-.features h4{
-  color: #ff6d6d;
-  text-transform: uppercase;
-  font-family: 'EncodeSansCompressed-SemiBold';
-  font-size: 82%;
-  letter-spacing: 0.4em;
-}
-/*heading style*/
-.features h2{
-  color: #282828;
-  font-family: "Exo-Regular"
-}
-/*paragraph style*/
-.features p{
-  color: #6f6f6e;
-  padding: 2em 0 2em 0;
-  font-family: "Sansbook";
-}
-/*medium: different padding for bigger*/
-@media screen and (min-width: 40em) {
-  .features p{
-    padding: 2em 0 5em 0;
-  }
-}
-/*custom: to make that p line break that appears on mockup but keep text responsive on mobile*/
-@media screen and (min-width: 54em) {
-    .features span {
-      display: block;
-    }
-}
-/* **********************************************************
-SUBSCRIBE SECTION
-********************************************************** */
-/*background color and standard padding*/
-.subscribe {
-  background-color: #323969;
-  padding: 5em 0;
-}
-/*heading color*/
-.subscribe h2 {
-  color: #fff;
-  font-family: "Exo-Medium";
-  padding: 0 0 1em 0;
-}
-/*p element color*/
-.subscribe p {
-  color: #a7a9bb;
-  font-family: "Sansbold";
-  font-size: 0.9em;
-  padding: 1em 0 0 0;
-}
-/*take away extra color from link*/
-.subscribe p a {
-  color: inherit;
-}
-/*redesign alert button and bit border shadow underneath the button*/
-.subscribe .button.alert {
-  background-color: #ff6d6d;
-  width: 100%;
-  -webkit-box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.3);
-  /*color: #f6f5f3;*/
-  font-family: "Exo-Medium";
-}
-/*since making button spectial to .subscribe class, hover and focus got lost. here they are back*/
-.subscribe .button.alert:hover,
-.subscribe .button.alert:focus {
-      background-color: #da3116;
-}
-/*make rounded corners for both input and submit button*/
-.subscribe .button.alert,
-.subscribe input[type="email"] {
-  border-radius: 3px;
-}
-/*redesign input*/
-.subscribe input[type="email"] {
-  background-color: #464C77; /*PS file: #9396ad*/
-  border: none;
-  color: #fff;
-}
-/*medium: padding bigger*/
-@media screen and (min-width: 40em) {
-  .subscribe {
-    padding: 6.5em 0;
-  }
-}
-/* **********************************************************
-FOOTER SECTION
-********************************************************** */
-/*footer styles. general size for text in footer*/
-footer {
-  background-color: #232323;
-  padding: 5em 0;
-  color: #ababab;
-  font-size: 0.9em;
-}
-/*add stuff for small screens only*/
-@media screen and (max-width: 39.9375em) {
-  /*make navigation more clickable*/
-  footer {
-    font-size: 1em;
-  }
-  /*add visual clearity with margin*/
-  footer div.small-12 {
-    margin: 0 0 2em 0;
-  }
-}
-
-/*heading font*/
-footer h5 {
-  font-family: "Exo-Medium";
-}
-/*links style*/
-footer a {
-  display: block;
-  font-family: "Exo-Demibold";
-  color: #595959; /*7b7b7b; in PS*/
-  padding: 0.2em;
-}
+@charset "UTF-8";html,body{height:100%;margin:0}body{font-family:'Lato',serif}
+body h2{font-family:'Saira Semi Condensed',sans-serif}body h4{font-family:'Lato',sans-serif}
+.clear{float:left;clear:both}.no-clear{float:left}a[href^="http"]:empty::before{content:attr(href)}
+.text-center{text-align:center}.wrap,.mini_wrap,.intro_wrap{margin:1rem;padding:4rem 1rem 1rem 1rem;flex:auto}
+.wrap{padding:4rem 0 1rem 0}.mini_wrap{padding:0}a{text-decoration:none;color:#000}
+.sub{color:#ccc}.portfolio_bg{background-color:#faf9f7;font-family:Lato}.container{display:flex;flex-flow:row wrap;justify-content:flex-start}
+.item{width:100%;height:15rem;margin:1rem auto;position:relative;overflow:hidden}
+.bg{width:100%;height:100%;position:absolute;background-image:url("https://www.success.com/sites/default/files/main/blogposts/howtobeconstantlycreative.jpg");background-size:cover;background-position:center;transition:500ms}
+.bg img{width:100%}.fg{background:radial-gradient(ellipse farthest-corner at center center,rgba(0,0,0,0.5) 20%,rgba(0,0,0,0.85) 100%) repeat scroll 0 0;position:absolute;top:0;left:0;width:100%;height:100%;transition:500ms}
+.title{color:#fff;padding:1rem;margin:0;font-family:'Lato',sans-serif}
+.title .heading{margin:0}.title .subtext{font-size:.7rem;color:#999;letter-spacing:1px;text-transform:uppercase}
+.title .calltoaction{border:2px solid #fff;border-radius:4%;width:10rem;margin:auto;position:relative;top:4rem}
+.title .calltoaction p{text-transform:uppercase;font-weight:600;text-align:center;margin:.7rem}
+.item:hover .bg{transform:scale(1.1)}.item:hover .fg{opacity:.5}header{height:6rem;width:100%;position:fixed;top:0;z-index:10}
+header ul{display:inline;list-style:none}header ul li{float:left;margin:2rem}header ul li:last-child{float:right}
+.logo .circle{height:2rem;width:2rem;border-radius:50%;border:2px solid #000}.menu{cursor:pointer;width:2rem;height:2rem;user-drag:none;user-select:none;-moz-user-select:none;-webkit-user-drag:none;-webkit-user-select:none;-ms-user-select:none}
+.menu .line_1,.menu .line_2,.menu .line_3{height:2px;width:2rem;background-color:#000;margin-bottom:8px;transition:.5s}
+.menu .line_2{width:1.5rem;margin-left:.5rem}.menu .line_3{margin-bottom:0}.menu.x .line_1{transform:rotate(45deg);margin-top:.7rem}
+.menu.x .line_2{opacity:0}.menu.x .line_3{transform:rotate(-45deg);margin-top:-1.3rem}
+.full_screen{height:100vh;width:100%;position:absolute;top:0;right:0;background:#b3aeaa;transition:.5s}
+.full_center{margin:auto;max-width:30rem;padding:1rem;position:relative;top:50%;transform:translateY(-50%)}
+.display_no{opacity:0;overflow:hidden;display:none}.navigation ul{list-style:none;text-align:center;padding:0}
+.navigation ul li{margin:1rem;text-transform:uppercase}.navigation ul li a{color:#000;font-size:2.2rem}
+.navigation ul li a:hover{text-decoration:line-through;font-weight:600}.opener{border-top:1px solid #000;border-bottom:1px solid #000}
+.opener p{font-size:2.5rem}.project1 .bg{background-image:url("../img/eestiteed.png")}
+.project2 .bg{background-image:url("../img/europarl.png")}.snowman .bg{background-image:url("../img/snowman.png")}
+.hovershine .bg{background-image:url("../img/hovershine.png")}.p_1,.p_3{background:#e1dbca}
+.store_icon{height:3rem}.sides{padding-bottom:1rem;flex-basis:100%;margin:2%}.sides .device{position:relative;top:50%;transform:translateY(-50%)}
+.sides .device.device_desktop .device_img{max-width:100%}.sides .device.device_desktop video{position:absolute;top:0;left:4%;width:92.4%;top:5%}
+.sides .device.device_iphone .device_img{max-height:22rem;margin:auto;width:100%}
+.sides .device.device_iphone video{position:absolute;top:0;left:33.4%;width:33.4%;top:15%}
+.me{background:linear-gradient(to right,#fffcf7,#3e3b3b);background-image:url("../img/DSC_0222.jpg");background-position:center;background-attachment:fixed;background-size:cover}
+.wrap_about{max-width:31rem;background-color:rgba(255,255,255,0.5);padding:1rem}.name{font-family:'Megrim',cursive;font-size:3rem;margin-bottom:0}
+.main_data{font-family:monospace;margin-bottom:2rem;font-size:1rem}.social{width:3rem;margin-right:2rem}
+@media screen and (min-width:769px){.wrap,.mini_wrap,.intro_wrap{margin:1rem;padding:4rem 1rem 1rem 1rem;flex:auto}
+.mini_wrap{padding:1rem}.sides{flex-basis:46%}.me{height:100%}}@media screen and (min-width:1025px){.navigation ul li a{font-size:3.2rem}
+.wrap{margin:0;padding:6rem}.mini_wrap{margin:0;padding:2rem 6rem}.intro_wrap{margin:0;padding:6rem 6rem 2rem 6rem}
+}@media screen and (min-width:42em){.row_reverse{flex-flow:row-reverse wrap}}

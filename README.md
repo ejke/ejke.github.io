@@ -1,3 +1,5 @@
-# <a href="https://ejke.github.io/" >ejke.github.io </a>
+# Ejke github pages repository
 
-work from mockup to code. Used Zurb Foundation 6 http://foundation.zurb.com/
+This repository master branch is live on [ejke.github.io](https://ejke.github.io/).
+
+This portfolio is made in 2017.
