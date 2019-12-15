@@ -1,0 +1,28 @@
+body {
+  font-family: 'Gaegu', cursive;
+  font-size: 1.5rem
+}
+
+.profile__wrapper {
+  width: 20em;
+  margin: 3em auto 0;
+  text-align: center;
+}
+
+.profile__image {
+  border-radius: 50%;
+  width: 8em;
+}
+.profile__list {
+  list-style: none;
+  text-align: left;
+  width: 10em;
+  margin-left: 6em;
+}
+.profile__list a {
+  text-decoration: none;
+  color: #000;
+}
+.profile__list a:hover {
+  color: #839788;
+}
