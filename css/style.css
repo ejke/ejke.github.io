@@ -1,30 +1,48 @@
 body {
-  font-family: 'Prompt', cursive;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #666;
   font-size: 1.5rem;
-  background-color: #f4efe4;
+  background-color: #fff;
 }
 
 .profile__wrapper {
   width: 20em;
-  margin: 3em auto 0;
+  margin: 5em auto 0;
   text-align: center;
-  color: rgb(61, 61, 61);
 }
 
-.profile__image {
+.profile__wrapper img {
   border-radius: 50%;
   width: 8em;
 }
+
+.profile__wrapper h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #222;
+  margin-bottom:0;
+}
+
+.profile__wrapper h2 {
+  font-size: 20px;
+  font-weight: 300;
+  color: #aaa;
+}
+
 .profile__list {
   list-style: none;
-  text-align: left;
-  width: 10em;
-  margin-left: 5.8em;
+  margin-left: 5em;
 }
+
+.profile__list li {
+  width: 2em;
+  float: left;
+}
+
 .profile__list a {
   text-decoration: none;
-  color: rgb(61, 61, 61);
+  color: #aaa;
 }
 .profile__list a:hover {
-  color: #839788;
+  color: #222;
 }
