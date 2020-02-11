@@ -1,9 +1,11 @@
 const asciiArtOutput = `
       +
             *
-   *   /\_/\   '
+   *   /\\_/\\   '
       ( o.o )
        > ^ <    *
+  +
      Meow meow!
+
 `;
 console.log(asciiArtOutput);
