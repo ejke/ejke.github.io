@@ -3,6 +3,7 @@ body {
   color: #666;
   font-size: 1.5rem;
   background-color: #fff;
+  margin: 0;
 }
 
 .profile__wrapper {
@@ -45,4 +46,22 @@ body {
 }
 .profile__list a:hover {
   color: #222;
+}
+
+
+#popup-wrapper {
+  background: rgba(0,0,0,.4);
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+.popup {
+  width: 20em;
+  box-shadow: 10px 10px 60px #555;
 }
